@@ -2,24 +2,34 @@
 <html>
 
 <head>
-<title> Simple Little Calculator </title>
+<title> Styled Calculator that Adds, Subtracts, Mutliplies, and Divides</title>
 
 <style>
 
 	table {
-		border-radius: 5%;
-		border: 1px solid black;
+		border-radius: 10px;
 	}
 
 	td {
-		border-radius: 10%;
+		border: none;
 	}
 	
-	input[type=button], #display {
+	input[type=button]{
 		font-family: sans-serif;
-		font-size: 150%
+		font-size: 25px;
+		width: 75px;
+		height: 75px;
+		background-color: #ffffff;
+		border-radius: 10px;
 	}
 
+	#display {
+		font-family: sans-serif;
+		font-size: 25px;
+		height: 75px;
+		background-color: #B5D6E8;
+		border-radius: 10px;
+	}
 </style>
 
 </head>
@@ -32,6 +42,8 @@ PLANNING-initial ideas:
 -calculate button (=)
 -addition button
 -substraction button
+-multiplication button
+-division button
 
 TROUBLESHOOTING:
 -too many digits -> trap numbers that appear too long
@@ -43,41 +55,41 @@ TROUBLESHOOTING:
 <body>
 
 <!--form tag used to create an HTML form for user input-->
-<form name = 'simple calculator'>
+<form name = 'calculator'>
 	<!--center the calculator on the page-->
 	<div align="center">
-		<table border="1">
+		<table border="1" class = 'calc'>
 			<tr>
 				<td align="center" colspan = '3' id = 'display'>0</td>
 			</tr>
 			
 			<tr>
-				<td><input type = 'button' value = ' 1 ' name = 'one' onclick = "register('1')"></td>
-				<td><input type = 'button' value = ' 2 ' name = 'two' onclick = "register('2')"></td>
-				<td><input type = 'button' value = ' 3 ' name = 'three' onclick = "register('3')"></td>
+				<td><input type = 'button' value = '1' name = 'one' onclick = "register('1')"></td>
+				<td><input type = 'button' value = '2' name = 'two' onclick = "register('2')"></td>
+				<td><input type = 'button' value = '3' name = 'three' onclick = "register('3')"></td>
 			</tr>
 
 			<tr>
-				<td><input type = 'button' value = ' 4 ' name = 'four' onclick = "register('4')"></td>
-				<td><input type = 'button' value = ' 5 ' name = 'five' onclick = "register('5')"></td>
-				<td><input type = 'button' value = ' 6 ' name = 'six' onclick = "register('6')"></td>
+				<td><input type = 'button' value = '4' name = 'four' onclick = "register('4')"></td>
+				<td><input type = 'button' value = '5' name = 'five' onclick = "register('5')"></td>
+				<td><input type = 'button' value = '6' name = 'six' onclick = "register('6')"></td>
 			</tr>
 			
 			<tr>
-				<td><input type = 'button' value = ' 7 ' name = 'seven' onclick = "register('7')"></td>
-				<td><input type = 'button' value = ' 8 ' name = 'eight' onclick = "register('8')"></td>
-				<td><input type = 'button' value = ' 9 ' name = 'nine' onclick = "register('9')"></td>
+				<td><input type = 'button' value = '7' name = 'seven' onclick = "register('7')"></td>
+				<td><input type = 'button' value = '8' name = 'eight' onclick = "register('8')"></td>
+				<td><input type = 'button' value = '9' name = 'nine' onclick = "register('9')"></td>
 			</tr>
 
 			<tr>
-				<td><input type = 'button' value = ' + ' onclick = "register('+')"></td>
-				<td><input type = 'button' value = ' 0 ' name = 'zero' onclick = "register('0')"></td>
-				<td><input type = 'button' value = ' - ' onclick = "register('-')"></td>
+				<td><input type = 'button' value = '+' onclick = "register('+')"></td>
+				<td><input type = 'button' value = '0' name = 'zero' onclick = "register('0')"></td>
+				<td><input type = 'button' value = '-' onclick = "register('-')"></td>
 			</tr>
 
 			<tr>
-				<td colspan = '2' align = 'center'><input type = 'button' value = '      =      ' onclick = "register('=')"></td>
-				<td><input type = 'button' value = ' C ' onclick = "_clear_()"></td>
+				<td colspan = '2' align = 'center' width = '10px'><input type = 'button' value = '=' onclick = "register('=')"></td>
+				<td><input type = 'button' value = 'C' onclick = "_clear_()"></td>
 			</tr>
 		</table>
 	</div>
