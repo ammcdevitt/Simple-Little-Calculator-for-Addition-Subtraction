@@ -31,7 +31,7 @@
 		border-radius: 10px;
 	}
 
-	/*styles the font style and size, height and width, background color, and rounded corners of buttons.*/
+	/*sets the font style and size, height, background color and rounded corners of the display field, by referencing the id display*/
 	#display {
 		font-family: sans-serif;
 		font-size: 25px;
@@ -63,29 +63,29 @@
 			
 			<!--first row of buttons: 1, 2, 3. for all table cells, the type set to button and value set to the respective number. onclick event enables interaction with JS once user clicks on button-->
 			<tr>
-				<td><input type = 'button' value = '1' name = 'one' onclick = "register('1')"></td>
-				<td><input type = 'button' value = '2' name = 'two' onclick = "register('2')"></td>
-				<td><input type = 'button' value = '3' name = 'three' onclick = "register('3')"></td>
+				<td><input type = 'button' value = '1' onclick = "register('1')"></td>
+				<td><input type = 'button' value = '2' onclick = "register('2')"></td>
+				<td><input type = 'button' value = '3' onclick = "register('3')"></td>
 			</tr>
 
 			<!--second row of buttons: 4, 5, 6-->
 			<tr>
-				<td><input type = 'button' value = '4' name = 'four' onclick = "register('4')"></td>
-				<td><input type = 'button' value = '5' name = 'five' onclick = "register('5')"></td>
-				<td><input type = 'button' value = '6' name = 'six' onclick = "register('6')"></td>
+				<td><input type = 'button' value = '4' onclick = "register('4')"></td>
+				<td><input type = 'button' value = '5' onclick = "register('5')"></td>
+				<td><input type = 'button' value = '6'  onclick = "register('6')"></td>
 			</tr>
 			
 			<!--third row of buttons: 7, 8, 9-->
 			<tr>
-				<td><input type = 'button' value = '7' name = 'seven' onclick = "register('7')"></td>
-				<td><input type = 'button' value = '8' name = 'eight' onclick = "register('8')"></td>
-				<td><input type = 'button' value = '9' name = 'nine' onclick = "register('9')"></td>
+				<td><input type = 'button' value = '7' onclick = "register('7')"></td>
+				<td><input type = 'button' value = '8' onclick = "register('8')"></td>
+				<td><input type = 'button' value = '9' onclick = "register('9')"></td>
 			</tr>
 
 			<!--fourth row of buttons: +, 0, - -->
 			<tr>
 				<td><input type = 'button' value = '+' onclick = "register('+')"></td>
-				<td><input type = 'button' value = '0' name = 'zero' onclick = "register('0')"></td>
+				<td><input type = 'button' value = '0' onclick = "register('0')"></td>
 				<td><input type = 'button' value = '-' onclick = "register('-')"></td>
 			</tr>
 
