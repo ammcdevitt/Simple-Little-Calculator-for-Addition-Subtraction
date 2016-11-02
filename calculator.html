@@ -11,6 +11,11 @@
 		border-radius: 10px;
 	}
 
+	/*sets the border width, style and color of the calculator border*/
+	div table {
+		border: 3px solid gray;
+	}
+	
 	/*removes the borders on the table cells so that the border doesn't 'compete' with that of the buttons*/
 	td {
 		border: none;
@@ -45,39 +50,46 @@
 
 <body>
 
-<!--form tag used to create an HTML form for user input-->
+<!--beginning of form tag, which creates an HTML form for user input-->
 <form>
 	<!--center the calculator on the page-->
-	<div align="center">
-		<table border="1" class = 'calc'>
+	<div align='center'>
+		<!--begins the table tag-->
+		<table>
+			<!--display area, which spans 3 columns and has an id set to 'display'. by default, the display area shows '0'; therefore, you will see this when the page is first loaded or refreshed.-->
 			<tr>
-				<td align="center" colspan = '3' id = 'display'>0</td>
+				<td colspan = '3' id = 'display'>0</td>
 			</tr>
 			
+			<!--first row of buttons: 1, 2, 3. for all table cells, the type set to button and value set to the respective number. onclick event enables interaction with JS once user clicks on button-->
 			<tr>
 				<td><input type = 'button' value = '1' name = 'one' onclick = "register('1')"></td>
 				<td><input type = 'button' value = '2' name = 'two' onclick = "register('2')"></td>
 				<td><input type = 'button' value = '3' name = 'three' onclick = "register('3')"></td>
 			</tr>
 
+			<!--second row of buttons: 4, 5, 6-->
 			<tr>
 				<td><input type = 'button' value = '4' name = 'four' onclick = "register('4')"></td>
 				<td><input type = 'button' value = '5' name = 'five' onclick = "register('5')"></td>
 				<td><input type = 'button' value = '6' name = 'six' onclick = "register('6')"></td>
 			</tr>
 			
+			<!--third row of buttons: 7, 8, 9-->
 			<tr>
 				<td><input type = 'button' value = '7' name = 'seven' onclick = "register('7')"></td>
 				<td><input type = 'button' value = '8' name = 'eight' onclick = "register('8')"></td>
 				<td><input type = 'button' value = '9' name = 'nine' onclick = "register('9')"></td>
 			</tr>
 
+			<!--fourth row of buttons: +, 0, - -->
 			<tr>
 				<td><input type = 'button' value = '+' onclick = "register('+')"></td>
 				<td><input type = 'button' value = '0' name = 'zero' onclick = "register('0')"></td>
 				<td><input type = 'button' value = '-' onclick = "register('-')"></td>
 			</tr>
 
+			<!--last row of buttons: = and clear (C). clear is set to '_clear_' because 'function clear ()' (referenced below in JS) has special meaning in JS-->
 			<tr>
 				<td colspan = '2'><input type = 'button' value = '=' id = 'equalSign' onclick = "register('=')"></td>
 				<td><input type = 'button' value = 'C' onclick = "_clear_()"></td>
