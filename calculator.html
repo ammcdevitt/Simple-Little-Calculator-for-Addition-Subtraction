@@ -6,14 +6,17 @@
 
 <style>
 
+	/*rounds the corners of just the entire calculator, not the individual buttons*/
 	table {
 		border-radius: 10px;
 	}
 
+	/*removes the borders on the table cells so that the border doesn't 'compete' with that of the buttons*/
 	td {
 		border: none;
 	}
 	
+	/*styles the font style and size, height and width, background color, and rounded corners of buttons.*/
 	input[type=button]{
 		font-family: sans-serif;
 		font-size: 25px;
@@ -23,6 +26,7 @@
 		border-radius: 10px;
 	}
 
+	/*styles the font style and size, height and width, background color, and rounded corners of buttons.*/
 	#display {
 		font-family: sans-serif;
 		font-size: 25px;
@@ -31,7 +35,7 @@
 		border-radius: 10px;
 	}
 	
-	/*increases width of button for equal sign*/
+	/*increases the width of the '=' sign, by referencing the id named equalSign */
 	#equalSign {
 		width: 155px;
 	}
