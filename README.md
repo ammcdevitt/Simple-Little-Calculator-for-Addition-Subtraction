@@ -8,5 +8,5 @@
 -'-' button<br>
 -'C' button to clear entries<br>
 
-![styled calculator for addition and subtraction](https://cloud.githubusercontent.com/assets/10386036/19877426/93c0cd78-9fb5-11e6-8794-0ee70bb58335.png) <br>
+![calculator for addition and subtraction](https://cloud.githubusercontent.com/assets/10386036/19934767/36799b38-a0ee-11e6-9b64-9ac5902072d5.png) <br>
 <em> (preview)<em>
